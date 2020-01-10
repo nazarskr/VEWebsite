@@ -1,0 +1,19 @@
+<header>
+    <div id="logo">
+        <a id="voxElectronica" routerLink="home">Vox Electronica</a>
+    </div>
+    <nav id="navigation">
+        <ul id="navUkr" *ngIf="language === 'ukr'">
+            <li routerLinkActive="active"><a routerLink="about">про нас</a></li>
+            <li routerLinkActive="active"><a routerLink="program">програма</a></li>
+            <li routerLinkActive="active"><a routerLink="gallery">галерея</a></li>
+            <li routerLinkActive="active"><a routerLink="news">новини</a></li>
+        </ul>
+        <ul id="navEng" *ngIf="language === 'eng'">
+            <li routerLinkActive="active"><a routerLink="about">about</a></li>
+            <li routerLinkActive="active"><a routerLink="program">program</a></li>
+            <li routerLinkActive="active"><a routerLink="gallery">gallery</a></li>
+            <li routerLinkActive="active"><a routerLink="news">news</a></li>
+        </ul>
+    </nav>
+</header>

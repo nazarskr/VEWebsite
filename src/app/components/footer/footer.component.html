@@ -1,0 +1,30 @@
+<footer>
+    <div id="social">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="../../../assets/facebook-logo.png" alt="facebook" srcset="">
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="../../../assets/youtube-logo.png" alt="youtube" srcset="">
+        </a>
+        <a href="https://soundcloud.com/discover" target="_blank">
+            <img src="../../../assets/soundcloud-logo.png" alt="soundcloud" srcset="">
+        </a>
+    </div>
+    <nav id="footerNavigation">
+        <ul *ngIf="language === 'ukr'">
+            <li routerLinkActive="active"><a routerLink="partners">партнери</a></li>
+            <li routerLinkActive="active"><a routerLink="archive">архів</a></li>
+            <li routerLinkActive="active"><a routerLink="press-room">прес-кіт</a></li>
+            <li routerLinkActive="active"><a routerLink="contact">контакт</a></li>
+        </ul>
+        <ul *ngIf="language === 'eng'">
+            <li routerLinkActive="active"><a routerLink="partners">partners</a></li>
+            <li routerLinkActive="active"><a routerLink="archive">archive</a></li>
+            <li routerLinkActive="active"><a routerLink="press-room">press-kit</a></li>
+            <li routerLinkActive="active"><a routerLink="contact">contact</a></li>
+        </ul>
+    </nav>
+    <div id="language">
+        <span (click)="changeLang('ukr')">УКР</span> | <span (click)="changeLang('eng')">ENG</span>
+    </div>
+</footer>

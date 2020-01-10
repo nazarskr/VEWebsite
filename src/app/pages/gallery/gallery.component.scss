@@ -1,0 +1,31 @@
+#gallery {
+    background-color: yellow;
+    h2 {
+        font-size: 60px;
+        color: grey;
+        text-align: center;
+        padding-top: 50px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 400;
+    }
+    #galleryPhotos {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 50px 0;
+        .photo {
+            width: 300px;
+            height: 195px;
+            margin: 5px;
+            padding: 10px;
+            img {
+                margin: auto;
+                width: 280px;
+                height: 175px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

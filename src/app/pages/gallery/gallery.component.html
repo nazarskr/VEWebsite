@@ -1,0 +1,18 @@
+<div class="page" id="gallery">
+    <h2 *ngIf="language==='ukr'">Галерея</h2>
+    <h2 *ngIf="language==='eng'">Gallery</h2>
+    <div id="galleryPhotos">
+        <mat-card class="photo" *ngFor="let image of images; let i = index">
+            <img src="{{image.url}}" alt="no" srcset="" (click)="openGallery(i)">
+        </mat-card>
+    </div>
+    <ngx-image-gallery 
+        [images]="images" 
+        [conf]="conf"
+        (onOpen)="galleryOpened($event)"
+        (onClose)="galleryClosed()"
+        (onImageClicked)="galleryImageClicked($event)"
+        (onImageChange)="galleryImageChanged($event)"
+        (onDelete)="deleteImage($event)">
+    </ngx-image-gallery>
+</div>

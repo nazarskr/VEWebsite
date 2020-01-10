@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import './variables.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $main-font;
+}
+li {
+    list-style-type: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+a:visited {
+    color: auto;
+}
+.page {
+    padding-top: 70px;
+    width: 100vw;
+    min-height: calc(100vh - 70px);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
