@@ -2,9 +2,9 @@ import { NgxUiLoaderConfig} from 'ngx-ui-loader';
 
 export const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     fgsType: 'rectangle-bounce-party',
-    fgsColor: 'grey',
-    pbThickness: 3,
+    fgsColor: 'white',
+    pbThickness: 5,
     overlayColor: 'rgba(0, 0, 0, 0.9)',
     pbColor: 'yellow',
-    fgsSize: 40,
+    fgsSize: 60,
 };

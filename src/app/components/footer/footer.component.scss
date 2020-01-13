@@ -28,8 +28,12 @@ footer {
             justify-content: space-around;
             li {
                 a {
+                    padding-bottom: 5px;
                     line-height: 45px;
                     color: grey;
+                }
+                a:hover, .navActive {
+                    border-bottom: 1px solid yellow;
                 }
             }
         }
@@ -40,6 +44,13 @@ footer {
         font-size: 14px;
         span:hover {
             cursor: pointer;
+        }
+    }
+}
+@media (max-width: 800px) {
+    footer {
+        #footerNavigation {
+            display: none;
         }
     }
 }

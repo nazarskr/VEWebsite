@@ -1,5 +1,49 @@
-<div class="page">
-    <p *ngIf="language==='ukr'">контакт працює!</p>
-    <p *ngIf="language==='eng'">contact works!</p>
+<div class="page" id="contact">
+    <div *ngIf="language==='ukr'" class="contactInner">
+        <div class="contactItem">
+            <h3>ГО "Мистецьке об'єднання "НУРТ"</h3>
+            <p>вул. Мечникова, 15, кв. 13 <br>
+                79014 Львів <br>
+                Україна
+            </p>
+        </div>
+        <div class="contactItem">
+            <h3>Остап Мануляк</h3>
+            <p>ostapmanulyak@gmail.com</p>
+            <a href="http://manulyak.blogspot.com" target="_blank">manulyak.blogspot.com</a>
+        </div>
+        <div class="contactItem">
+            <h3>Студія EESEM</h3>
+            <p>Львівська національна музична академія ім. М.В. Лисенка<br>
+                вул. Нижанківського, 5, каб. 50 <br>
+                79005 Львів <br>
+                Україна
+            </p>
+            <a href="http://eesemstudio.blogspot.com" target="_blank">eesemstudio.blogspot.com</a>
+        </div>
+    </div>
+    <div *ngIf="language==='eng'" class="contactInner">
+        <div class="contactItem">
+            <h3> Art association NURT</h3>
+            <p>15 Mechnykova St., ap. 13 <br>
+                79014 Lviv <br>
+                Ukraine
+            </p>
+        </div>
+        <div class="contactItem">
+            <h3>Ostap Manulyak</h3>
+            <p>ostapmanulyak@gmail.com</p>
+            <a href="http://manulyak.blogspot.com" target="_blank">manulyak.blogspot.com</a>
+        </div>
+        <div class="contactItem">
+            <h3>EESEM Studio</h3>
+            <p>Lviv National Music Academy named after Mykola Lysenko<br>
+                5 Nyzhankivs'koho St., aud. 50 <br>
+                79005 Lviv <br>
+                Ukraine
+            </p>
+            <a href="http://eesemstudio.blogspot.com" target="_blank">eesemstudio.blogspot.com</a>
+        </div>
+    </div>
 </div>
 

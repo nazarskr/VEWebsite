@@ -1,6 +1,6 @@
 <footer>
     <div id="social">
-        <a href="https://www.facebook.com/" target="_blank">
+        <a href="https://www.facebook.com/voxelectronicafest/" target="_blank">
             <img src="../../../assets/facebook-logo.png" alt="facebook" srcset="">
         </a>
         <a href="https://www.youtube.com/" target="_blank">
@@ -12,16 +12,32 @@
     </div>
     <nav id="footerNavigation">
         <ul *ngIf="language === 'ukr'">
-            <li routerLinkActive="active"><a routerLink="partners">партнери</a></li>
-            <li routerLinkActive="active"><a routerLink="archive">архів</a></li>
-            <li routerLinkActive="active"><a routerLink="press-room">прес-кіт</a></li>
-            <li routerLinkActive="active"><a routerLink="contact">контакт</a></li>
+            <li routerLinkActive="active" (click)="setActive($event)">
+                <a routerLink="partners" class="navLink">партнери</a>
+            </li>
+            <li routerLinkActive="active" (click)="setActive($event)">
+                <a routerLink="archive" class="navLink">архів</a>
+            </li>
+            <li routerLinkActive="active" (click)="setActive($event)">
+                <a routerLink="press-room" class="navLink">прес-центр</a>
+            </li>
+            <li routerLinkActive="active" (click)="setActive($event)">
+                <a routerLink="contact" class="navLink">контакт</a>
+            </li>
         </ul>
         <ul *ngIf="language === 'eng'">
-            <li routerLinkActive="active"><a routerLink="partners">partners</a></li>
-            <li routerLinkActive="active"><a routerLink="archive">archive</a></li>
-            <li routerLinkActive="active"><a routerLink="press-room">press-kit</a></li>
-            <li routerLinkActive="active"><a routerLink="contact">contact</a></li>
+            <li routerLinkActive="active" (click)="setActive($event)">
+                <a routerLink="partners" class="navLink">partners</a>
+            </li>
+            <li routerLinkActive="active" (click)="setActive($event)">
+                <a routerLink="archive" class="navLink">archive</a>
+            </li>
+            <li routerLinkActive="active" (click)="setActive($event)">
+                <a routerLink="press-room" class="navLink">press-room</a>
+            </li>
+            <li routerLinkActive="active" (click)="setActive($event)">
+                <a routerLink="contact" class="navLink">contact</a>
+            </li>
         </ul>
     </nav>
     <div id="language">

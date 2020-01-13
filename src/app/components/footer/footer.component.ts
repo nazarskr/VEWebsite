@@ -16,4 +16,15 @@ export class FooterComponent implements OnInit {
     this.language = lang;
     this.emitLang.emit(this.language);
   }
+  removeActive() {
+    if (document.getElementsByClassName('navActive')[0]) {
+      const prev = document.getElementsByClassName('navActive')[0];
+      prev.classList.remove('navActive');
+    }
+  }
+  setActive(event: MouseEvent): void {
+    this.removeActive();
+    const el = event.target as HTMLElement;
+    el.classList.add('navActive');
+  }
 }
