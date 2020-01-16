@@ -7,6 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PartnersComponent implements OnInit {
   language: string;
+  partners = [
+    {imageUrl: '../../../assets/images/eesem-logo.png'},
+    {imageUrl: '../../../assets/images/gershom.png'},
+    {imageUrl: '../../../assets/images/lvivcenter.png'},
+    {imageUrl: '../../../assets/images/eesem-logo.png'},
+    {imageUrl: '../../../assets/images/gershom.png'},
+    {imageUrl: '../../../assets/images/lvivcenter.png'},
+    {imageUrl: '../../../assets/images/eesem-logo.png'},
+    {imageUrl: '../../../assets/images/gershom.png'},
+    {imageUrl: '../../../assets/images/lvivcenter.png'},
+    {imageUrl: '../../../assets/images/eesem-logo.png'},
+    {imageUrl: '../../../assets/images/gershom.png'},
+    {imageUrl: '../../../assets/images/lvivcenter.png'},
+  ];
   constructor() { }
 
   ngOnInit() {

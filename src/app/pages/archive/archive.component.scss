@@ -1,0 +1,109 @@
+@import '../../../variables.scss';
+#archive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        top: 100px;
+        text-align: center;
+        padding: 25px 0;
+        text-transform: uppercase;
+    }
+    #archiveInner {
+        width: 100vw;
+        min-height: calc(100vh - 120px);
+        max-height: 200vh;
+        position: relative;
+        .archiveYear {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 33%;
+            height: 33%;
+            margin: 1%;
+            animation-duration: 50s;
+            animation-iteration-count: infinite;
+            a {
+                font-weight: 500;
+                font-size: 30px;
+            }
+        }
+        .archiveYear:nth-child(1) {
+            top: 0;
+            left: 0;
+        }
+        .archiveYear:nth-child(2) {
+            top: 0;
+            left: 34%;
+            animation-name: 'move1';
+        }
+        .archiveYear:nth-child(3) {
+            top: 0;
+            left: 68%;
+        }
+        .archiveYear:nth-child(4) {
+            top: 34%;
+            left: 0;
+        }
+        .archiveYear:nth-child(5) {
+            top: 34%;
+            left: 34%;
+        }
+        .archiveYear:nth-child(6) {
+            top: 34%;
+            left: 68%;
+        }
+        .archiveYear:nth-child(7) {
+            top: 68%;
+            left: 0;
+        }
+        .archiveYear:nth-child(8) {
+            top: 68%;
+            left: 34%;
+        }
+        .archiveYear:nth-child(9) {
+            top: 68%;
+            left: 68%;
+        }
+    }
+}
+@keyframes move1 {
+    0% {
+        top: 0;
+        left: 34%;
+    }
+    7% {
+        top: 34%;
+        left: 0;
+    }
+    20% {
+        top: 34%;
+        left: 0;
+    }
+    27% {
+        top: 34%;
+        left: 68%;
+    }
+    40% {
+        top: 34%;
+        left: 68%;
+    }
+    47% {
+        top: 68%;
+        left: 34%;
+    }
+    60% {
+        top: 68%;
+        left: 34%;
+    }
+    67% {
+        top: 0;
+        left: 0;
+    }
+    80% {
+        top: 0;
+        left: 34%;
+    }
+}

@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body, header, main, footer {
     font-family: $main-font;
 }
 li {
@@ -20,9 +22,7 @@ a:visited {
     color: auto;
 }
 .page {
-    padding-top: 70px;
+    padding: 70px 0 0 0;
     width: 100vw;
     min-height: calc(100vh - 70px);
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

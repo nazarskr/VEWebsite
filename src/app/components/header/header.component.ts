@@ -16,7 +16,7 @@ import {
         backgroundColor: 'white',
       })),
       state('scroll', style({
-        backgroundColor: 'yellow',
+        backgroundColor: 'black',
       })),
       transition('static <=> scroll', [
         animate('.5s')
@@ -25,9 +25,11 @@ import {
     trigger('scrollLink', [
       state('static', style({
         color: 'black',
+        borderColor: 'grey'
       })),
       state('scroll', style({
         color: 'grey',
+        borderColor: 'rgb(252 236 102)'
       })),
       transition('static <=> scroll', [
         animate('.5s')

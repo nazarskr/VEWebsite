@@ -1,3 +1,33 @@
-<div class="page">
-    <p>archive works!</p>
+<div class="page" id="archive">
+    <h2 *ngIf="language === 'ukr'" (click)="change()">Архів</h2>
+    <h2 *ngIf="language === 'eng'" (click)="change()">Archive</h2>
+    <div id="archiveInner">
+        <div class="archiveYear" [@anim1]="state">
+            <a href="#" target="_blank">2019</a>
+        </div>
+        <div class="archiveYear">
+            <a href="#" target="_blank">2018</a>
+        </div>
+        <div class="archiveYear">
+            <a href="#" target="_blank">2017</a>
+        </div>
+        <div class="archiveYear">
+            <a href="#" target="_blank">2016</a>
+        </div>
+        <div class="archiveYear">
+            <a href="#" target="_blank">2015</a>
+        </div>
+        <div class="archiveYear">
+            <a href="#" target="_blank">2014</a>
+        </div>
+        <div class="archiveYear">
+            <a href="#" target="_blank">2013</a>
+        </div>
+        <div class="archiveYear">
+            <a href="#" target="_blank">2012</a>
+        </div>
+        <div class="archiveYear">
+            <a href="#" target="_blank">2011</a>
+        </div>
+    </div>
 </div>

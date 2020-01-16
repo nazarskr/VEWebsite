@@ -1,3 +1,4 @@
+@import '../../../variables.scss';
 header {
     width: 100vw;
     position: fixed;
@@ -7,16 +8,18 @@ header {
     flex-direction: row;
     justify-content: space-between;
     height: 70px;
-    // background-color: white;
-    // color: black;
     padding: 10px 0 10px 10px;
     z-index: 999;
+    font-family: $main-font;
     #logo {
-        #voxElectronica{
-            line-height: 50px;
-            text-transform: uppercase;
-            font-size: 30px;
-            margin-left: 20px;
+        h1 {
+            #voxElectronica{
+                line-height: 50px;
+                text-transform: uppercase;
+                font-size: 30px;
+                margin-left: 20px;
+                font-weight: 500;
+            }
         }
     }
     #navigation {
@@ -46,8 +49,10 @@ header {
 @media (max-width: 800px) {
     header {
         #logo {
-            #voxElectronica{
-                font-size: 25px;
+            h1 {
+                #voxElectronica{
+                    font-size: 25px;
+                }
             }
         }
         #navigation {
@@ -138,3 +143,12 @@ header {
         }
     }
 }
+// @media (max-width: 500px) {
+//     header {
+//         #logo {
+//             #voxElectronica{
+//                 font-size: 16px;
+//             }
+//         }
+//     }
+// }

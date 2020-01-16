@@ -1,4 +1,24 @@
-<div class="page">
-    <p *ngIf="language==='ukr'">програма працює!</p>
-    <p *ngIf="language==='eng'">program works!</p>
+<div class="page" id="program">
+    <div class="programInner" *ngIf="language === 'ukr'">
+        <div class="festivalDay" *ngFor="let item of programa">
+            <h4>{{item.date}}</h4>
+            <h5>{{item.time}}, {{item.title}}</h5>
+            <p>{{item.place}}</p>
+            <ul>
+                <li *ngFor="let piece of item.pieces">{{piece}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="programInner" *ngIf="language === 'eng'">
+        <div class="festivalDay" *ngFor="let item of program">
+            <h4>{{item.date}}</h4>
+            <h5>{{item.time}}, {{item.title}}</h5>
+            <p>{{item.place}}</p>
+            <ul>
+                <li *ngFor="let piece of item.pieces">{{piece}}</li>
+            </ul>
+        </div>
+    </div>
+    <!-- <p *ngIf="language==='ukr'">програма працює!</p>
+    <p *ngIf="language==='eng'">program works!</p> -->
 </div>

@@ -1,13 +1,13 @@
 <footer>
     <div id="social">
         <a href="https://www.facebook.com/voxelectronicafest/" target="_blank">
-            <img src="../../../assets/facebook-logo.png" alt="facebook" srcset="">
+            <img src="../../../assets/images/facebook-logo.png" alt="facebook" srcset="">
         </a>
         <a href="https://www.youtube.com/" target="_blank">
-            <img src="../../../assets/youtube-logo.png" alt="youtube" srcset="">
+            <img src="../../../assets/images/youtube-logo.png" alt="youtube" srcset="">
         </a>
         <a href="https://soundcloud.com/discover" target="_blank">
-            <img src="../../../assets/soundcloud-logo.png" alt="soundcloud" srcset="">
+            <img src="../../../assets/images/soundcloud-logo.png" alt="soundcloud" srcset="">
         </a>
     </div>
     <nav id="footerNavigation">
@@ -41,6 +41,6 @@
         </ul>
     </nav>
     <div id="language">
-        <span (click)="changeLang('ukr')">УКР</span> | <span (click)="changeLang('eng')">ENG</span>
+        <span (click)="changeLang('ukr')" *ngIf="language ==='eng'">УКРАЇНСЬКА</span><span (click)="changeLang('eng')" *ngIf="language ==='ukr'">ENGLISH</span>
     </div>
 </footer>

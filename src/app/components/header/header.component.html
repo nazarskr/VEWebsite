@@ -1,6 +1,11 @@
 <header (window:scroll)="scrollingEvents()" [@scrollMenu]="scroll100 ? 'scroll' : 'static'">
     <div id="logo">
-        <a id="voxElectronica" routerLink="home" [@scrollLink]="scroll100 ? 'scroll' : 'static'">Vox Electronica</a>
+        <h1>
+            <a id="voxElectronica" 
+                routerLink="home" 
+                [@scrollLink]="scroll100 ? 'scroll' : 'static'">Vox&nbsp;Electronica
+            </a>
+        </h1>
     </div>
     <nav id="navigation">
         <input  [(ngModel)]="isChecked" id="menuToggle" type="checkbox" />

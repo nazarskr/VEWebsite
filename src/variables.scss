@@ -1,2 +1,10 @@
-$header-font: 'Raleway', sans-serif;
-$main-font: 'Montserrat', sans-serif;
+@import "fonts.scss";
+$main-font: 'Dejavu Sans';
+$this-yellow: rgb(252, 236, 102);
+$this-grey: rgb(156, 156, 156);
+
+:export {
+    mainfont: $main-font;
+    thisyellow: $this-yellow;
+    thisgrey: $this-grey;
+}

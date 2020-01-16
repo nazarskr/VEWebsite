@@ -1,9 +1,10 @@
+@import '../../../variables.scss';
 footer {
     width: 100vw;
     background-color: black;
     height: 70px;
     padding: 10px 50px;
-    color: grey;
+    color: $this-grey;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,10 +31,10 @@ footer {
                 a {
                     padding-bottom: 5px;
                     line-height: 45px;
-                    color: grey;
+                    color: $this-grey;
                 }
                 a:hover, .navActive {
-                    border-bottom: 1px solid yellow;
+                    border-bottom: 1px solid $this-yellow;
                 }
             }
         }

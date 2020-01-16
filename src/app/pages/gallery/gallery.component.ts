@@ -22,58 +22,58 @@ export class GalleryComponent implements OnInit {
   };
   images: Gallery[] = [
     {
-      url: '../../../assets/VEPoster.png',
+      url: '../../../assets/images/VEPoster.png',
       altText: '1',
       title: 'image1',
-      thumbnailUrl: '../../../assets/VEPoster.png'
+      thumbnailUrl: '../../../assets/images/VEPoster.png'
     },
     {
-      url: '../../../assets/VEConcert.jpg',
+      url: '../../../assets/images/VEConcert.jpg',
       altText: '2',
       title: 'image1',
-      thumbnailUrl: '../../../assets/VEConcert.jpg'
+      thumbnailUrl: '../../../assets/images/VEConcert.jpg'
     },
     {
-      url: '../../../assets/VEComposer.png',
+      url: '../../../assets/images/VEComposer.png',
       altText: '3',
       title: 'image1',
-      thumbnailUrl: '../../../assets/VEComposer.png'
+      thumbnailUrl: '../../../assets/images/VEComposer.png'
     },
     {
-      url: '../../../assets/VEPoster.png',
+      url: '../../../assets/images/VEPoster.png',
       altText: '1',
       title: 'image1',
-      thumbnailUrl: '../../../assets/VEPoster.png'
+      thumbnailUrl: '../../../assets/images/VEPoster.png'
     },
     {
-      url: '../../../assets/VEConcert.jpg',
+      url: '../../../assets/images/VEConcert.jpg',
       altText: '2',
       title: 'image1',
-      thumbnailUrl: '../../../assets/VEConcert.jpg'
+      thumbnailUrl: '../../../assets/images/VEConcert.jpg'
     },
     {
-      url: '../../../assets/VEComposer.png',
+      url: '../../../assets/images/VEComposer.png',
       altText: '3',
       title: 'image1',
-      thumbnailUrl: '../../../assets/VEComposer.png'
+      thumbnailUrl: '../../../assets/images/VEComposer.png'
     },
     {
-      url: '../../../assets/VEPoster.png',
+      url: '../../../assets/images/VEPoster.png',
       altText: '1',
       title: 'image1',
-      thumbnailUrl: '../../../assets/VEPoster.png'
+      thumbnailUrl: '../../../assets/images/VEPoster.png'
     },
     {
-      url: '../../../assets/VEConcert.jpg',
+      url: '../../../assets/images/VEConcert.jpg',
       altText: '2',
       title: 'image1',
-      thumbnailUrl: '../../../assets/VEConcert.jpg'
+      thumbnailUrl: '../../../assets/images/VEConcert.jpg'
     },
     {
-      url: '../../../assets/VEComposer.png',
+      url: '../../../assets/images/VEComposer.png',
       altText: '3',
       title: 'image1',
-      thumbnailUrl: '../../../assets/VEComposer.png'
+      thumbnailUrl: '../../../assets/images/VEComposer.png'
     },
   ];
   constructor() { }

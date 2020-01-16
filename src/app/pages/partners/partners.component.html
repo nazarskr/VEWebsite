@@ -1,3 +1,9 @@
-<div class="page">
-    <p>partners works!</p>
+<div id="partners" class="page">
+    <h2 *ngIf="language === 'ukr'">Наші партнери</h2>
+    <h2 *ngIf="language === 'eng'">Our partners</h2>
+    <div id="partnersInner">
+        <div class="partnerLogo" *ngFor="let partner of partners">
+            <img src="{{partner.imageUrl}}" alt="" srcset="">
+        </div>
+    </div>
 </div>

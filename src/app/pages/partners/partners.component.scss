@@ -1,0 +1,37 @@
+@import '../../../variables.scss';
+#partners {
+    padding: 70px 0 70px 0;
+    h2 {
+        padding: 25px 0;
+        text-align: center;
+    }
+    #partnersInner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 5%;
+        .partnerLogo {
+            padding: 15%;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 40%;
+            }
+        }
+    }
+}
+@media(max-width: 800px) {
+    #partners {
+        #partnersInner {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+            .partnerLogo {
+                padding: 10%;
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
