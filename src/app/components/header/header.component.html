@@ -9,7 +9,7 @@
     </div>
     <nav id="navigation">
         <input  [(ngModel)]="isChecked" id="menuToggle" type="checkbox" />
-        <label class="menuBtn" for="menuToggle">
+        <label class="menuBtn" for="menuToggle" [@scrollNavButton]="scroll100 ? 'scroll' : 'static'">
             <span></span>
         </label>
         <ul id="navUkr" *ngIf="language === 'ukr'" (click)='closeMenu()'>

@@ -27,7 +27,4 @@ export class FooterComponent implements OnInit {
     const el = event.target as HTMLElement;
     el.classList.add('navActive');
   }
-  // setActiveFooter() {
-
-  // }
 }

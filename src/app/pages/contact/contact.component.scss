@@ -7,18 +7,15 @@
         text-align: center;
         .contactItem {
             margin: 30px 0;
-            h3 {
+            h2 {
                 text-transform: uppercase;
             }
             p {
-                padding: 10px 0;
-            }
-            a {
-                border-bottom: 2px solid grey;
+                margin: 10px;
             }
             a:hover {
                 transition-duration: 1s;
-                border-color: yellow;
+                color: white;
             }
         }
     }

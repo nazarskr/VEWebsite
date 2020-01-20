@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   title = 'Vox Electronica';
   language = 'ukr';
   routerUrl: string;
+  index: number;
 
   constructor(private router: Router) {}
 
@@ -24,9 +25,14 @@ export class AppComponent implements OnInit {
   getLang(data) {
     this.language = data;
     this.routerUrl = this.router.url;
+    const link = this.routerUrl.slice(1, this.routerUrl.length);
     this.router.navigate(['empty']).then(() => {
       this.router.navigate([this.routerUrl]);
     });
+    setTimeout(() => {
+      const el = document.querySelector(`a[routerLink=${link}]`);
+      el.classList.add('navActive');
+    }, 0);
   }
   onOutletActivate(component) {
     component.language = this.language;

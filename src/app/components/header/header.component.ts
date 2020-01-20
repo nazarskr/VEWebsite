@@ -35,6 +35,17 @@ import {
         animate('.5s')
       ]),
     ]),
+    trigger('scrollNavButton', [
+      state('static', style({
+        background: 'transparent'
+      })),
+      state('scroll', style({
+        backgroundColor: 'grey'
+      })),
+      transition('static <=> scroll', [
+        animate('.5s')
+      ]),
+    ]),
   ],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
